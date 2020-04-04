@@ -6,14 +6,15 @@ input.onButtonPressed(Button.B, function () {
 })
 let ObstacleX = 0
 let autko: game.LedSprite = null
-basic.showString("RIVER RIDE")
+basic.showString("River Ride")
 basic.pause(200)
 basic.showNumber(3)
 basic.pause(200)
 basic.showNumber(2)
 basic.pause(200)
 basic.showNumber(1)
-basic.pause(200)
+basic.pause(500)
+basic.clearScreen()
 basic.showString("GO!")
 let obstacles: game.LedSprite[] = []
 autko = game.createSprite(2, 0)
@@ -75,4 +76,3 @@ basic.forever(function () {
     }
     basic.pause(pauza)
 })
- 
